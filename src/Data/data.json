@@ -1,0 +1,63 @@
+{
+    "Header": {
+      "title": "Bienvenido a DevPro",
+      "paragraph": "Ofrecemos servicios de diseños y creacion de paginas web, aplicaciones para tu negocio. "
+    },
+
+    "Services": [
+    {
+      "icon": "faWordpress",
+      "name": "1",
+      "text": "Landings Page"
+    },
+    {
+      "icon": "faCartArrowDown",
+      "name": "2",
+      "text": "App Web"
+    },
+    {
+      "icon": "faCloudDownload",
+      "name": "3",
+      "text": "App Desktop"
+    },
+    {
+      "icon": "faLanguage",
+      "name": "4",
+      "text": "Diseño de prototipos de aplicaciones"
+    },
+    {
+      "icon": "faPlane",
+      "name": "5",
+      "text": "."
+    },
+    {
+      "icon": "faPieChart",
+      "name": "6",
+      "text": "."
+    }
+    ],
+    "Team": [
+    {
+      "img": "img/team/01.jpg",
+      "name": "John Doe",
+      "job": "Director"
+    },
+    {
+      "img": "img/team/02.jpg",
+      "name": "Mike Doe",
+      "job": "Senior Designer"
+    },
+    {
+      "img": "img/team/03.jpg",
+      "name": "Jane Doe",
+      "job": "Senior Designer"
+    },
+    {
+      "img": "img/team/04.jpg",
+      "name": "Karen Doe",
+      "job": "Project Manager"
+    }
+  ]
+
+  
+  }
