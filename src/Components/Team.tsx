@@ -6,7 +6,7 @@ export function Team()
 {
     return(
     
-    <div id='Team' className='text-center'>
+    <div id='Team' className="h-screen bg-red-100">
       <Container>
         <Col md={{span:8, offset:2}} className=' section-title'>
           <h2>CONOCE AL EQUIPO</h2>
