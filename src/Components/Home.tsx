@@ -2,6 +2,8 @@ import JsonData from '../data/data.json';
 import Spline from "@splinetool/react-spline";
 
 export function Home() {
+  const rotation = { x: 10, y: 10 }; // Define the rotation variable
+
   return (
     <header id="Home" className="h-screen bg-blue-100 dark:bg-blue-900 transition-colors duration-300 pt-20">
       {/* Contenedor principal con diseño responsive */}
@@ -32,9 +34,7 @@ export function Home() {
             {/* Sección de la imagen Spline */}
             <div className=" w-full md:w-1/2 flex justify-center md:justify-end mt-8 md:mt-0">
               <Spline
-                 scene="https://prod.spline.design/Z6d06hRTFd5be5Qb/scene.splinecode" 
-
-                className=" bg-blue-100 dark:bg-blue-900 transition-colors duration-300 w-full max-w-sm md:max-w-md lg:max-w-lg h-auto"
+                 scene="https://prod.spline.design/Z6d06hRTFd5be5Qb/scene.splinecode" style={{ transform: `rotateX(${rotation.x}deg) rotateY(${rotation.y}deg)` }}
               />
             </div>
           </div>
