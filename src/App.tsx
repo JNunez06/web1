@@ -8,7 +8,8 @@ import { Home } from './Components/Home';
 import {Services} from './Components/Services';
 import { Team } from './Components/Team';
 import { Analytics } from "@vercel/analytics/react";  // Aquí importas el componente Analytics
-import { Fondo } from './Components/Fondo';
+
+
 
 
 function App() {
@@ -31,12 +32,12 @@ function App() {
         <Home />
         <Services />
         <Team />
-        <Fondo />
-
-         
       </div>
+
+      
       {/* Agregar Analytics aquí */}
       <Analytics />  {/* Este componente se coloca justo al final */}
+      
       
 
     </>

@@ -1,8 +1,14 @@
 import JsonData from '../data/data.json';
-import Spline from "@splinetool/react-spline";
+
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
+import { Cube } from "../Figure/Cube";
+
+
 
 export function Home() {
-  const rotation = { x: 10, y: 10 }; // Define the rotation variable
+ 
+
 
   return (
     <header id="Home" className="h-screen bg-blue-100 dark:bg-blue-900 transition-colors duration-300 pt-20">
@@ -31,11 +37,18 @@ export function Home() {
               </a>
             </div>
 
-            {/* Sección de la imagen Spline */}
+            {/* Sección de la imagen  */}
             <div className=" w-full md:w-1/2 flex justify-center md:justify-end mt-8 md:mt-0">
-              <Spline
-                 scene="https://prod.spline.design/Z6d06hRTFd5be5Qb/scene.splinecode" style={{ transform: `rotateX(${rotation.x}deg) rotateY(${rotation.y}deg)` }}
-              />
+            <div className="w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] shadow-lg">
+              <Canvas camera={{ position: [2, 2, 3], fov: 50 }}>
+                <ambientLight intensity={0.7} />
+                <pointLight position={[10, 10, 10]} />
+                <Cube />
+                <OrbitControls />
+              </Canvas>
+            </div>
+
+            
             </div>
           </div>
         </div>
