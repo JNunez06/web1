@@ -10,7 +10,7 @@ export function Team() {
             CONOCE AL EQUIPO
           </h2>
           <p className="text-xl text-gray-700 dark:text-gray-300">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.
+            Profesionales en el desarrollo de software de confianza.
           </p>
         </div>
 
