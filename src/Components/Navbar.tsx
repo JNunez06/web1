@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import JsonData from '../data/data.json';
 
 interface NavbarProps {
   theme: string;
