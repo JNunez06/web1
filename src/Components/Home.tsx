@@ -30,7 +30,7 @@ export function Home() {
 
               {/* Botón */}
               <a
-                href="#features"
+                href="#Services"
                 className="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 dark:bg-blue-700 dark:hover:bg-blue-800 transition-colors duration-300"
               >
                 Más información

@@ -32,6 +32,9 @@ function App() {
         <Home />
         <Services />
         <Team />
+        <footer className="container mx-auto px-4 py-1 text-center text-gray-600 dark:text-gray-400">
+          <p>© 2025 DevPro. Todos los derechos reservados.</p>
+        </footer>
       </div>
 
       
