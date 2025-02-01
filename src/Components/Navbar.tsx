@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { IconSun, IconMoon } from "@tabler/icons-react"; // Import icons
 
 interface NavbarProps {
   theme: string;
@@ -22,9 +23,20 @@ export default function Navbar({ theme, handleChangeTheme }: NavbarProps) {
 
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
-        <span className="text-xl font-bold text-black dark:text-white">
+        <span className="text-xl font-bold  dark:text-blue-700 text-blue-500 ">
           Mi Aplicación
         </span>
+        {/* Botón de cambio de tema */}
+        <button
+            className="px-4 py-2 rounded hover:bg-slate-300 dark:bg-slate-950 dark:text-white dark:hover:bg-slate-900 mt-2 lg:mt-0"
+            onClick={handleChangeTheme}
+          >
+           {/* {theme === "light" ? "Noche" : "Día"}*/}
+            <label className="switch">
+                    {theme === "light" ? < IconMoon /> : <IconSun />}
+                <span className="slider"></span>
+            </label>
+          </button>
 
         {/* Botón de menú hamburguesa (solo en móvil) */}
         <button
@@ -74,14 +86,9 @@ export default function Navbar({ theme, handleChangeTheme }: NavbarProps) {
             Team
           </a>
 
-          {/* Botón de cambio de tema */}
-          <button
-            className="bg-slate-200 px-4 py-2 rounded hover:bg-slate-300 dark:bg-slate-950 dark:text-white dark:hover:bg-slate-900 mt-2 lg:mt-0"
-            onClick={handleChangeTheme}
-          >
-            {theme === "light" ? "Modo Oscuro" : "Modo Claro"}
-          </button>
         </div>
+            
+          
       </div>
     </nav>
   );

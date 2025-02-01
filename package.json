@@ -15,6 +15,7 @@
     "@react-three/drei": "^9.121.4",
     "@react-three/fiber": "^8.17.14",
     "@splinetool/runtime": "^1.9.59",
+    "@tabler/icons-react": "^3.29.0",
     "@tailwindcss/vite": "^4.0.2",
     "@vercel/analytics": "^1.4.1",
     "bootstrap": "^5.3.3",
