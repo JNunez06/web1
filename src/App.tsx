@@ -8,7 +8,7 @@ import { Home } from './Components/Home';
 import {Services} from './Components/Services';
 import { Team } from './Components/Team';
 import { Analytics } from "@vercel/analytics/react";  // Aquí importas el componente Analytics
-
+import { Location } from './Components/Location';
 
 
 
@@ -32,10 +32,15 @@ function App() {
         <Home />
         <Services />
         <Team />
+        <Location />
+      
+
+
         <footer className="container mx-auto px-4 py-1 text-center text-gray-600 dark:text-gray-400">
           <p>© 2025 DevPro. Todos los derechos reservados.</p>
         </footer>
       </div>
+
 
       
       {/* Agregar Analytics aquí */}

@@ -34,6 +34,8 @@ export function Home() {
                   <Cube />
                   <OrbitControls />
                 </Canvas>
+                
+
               </div>
             </div>
           </div>

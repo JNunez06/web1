@@ -24,7 +24,7 @@ export default function Navbar({ theme, handleChangeTheme }: NavbarProps) {
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <span className="text-xl font-bold  dark:text-blue-700 text-blue-500 ">
-          Mi Aplicación
+          DevPro
         </span>
         {/* Botón de cambio de tema */}
         <button
@@ -66,24 +66,23 @@ export default function Navbar({ theme, handleChangeTheme }: NavbarProps) {
         >
           <a
             href="#Home"
-            className="block lg:inline-block text-gray-800 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400 py-2 lg:py-0"
-            onClick={() => setIsMenuOpen(false)}
-          >
+            className="block lg:inline-block text-lg font-semibold text-gray-800 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 py-2 lg:py-0 transition-all duration-300 ease-in-out transform hover:scale-105 no-underline"          >
             Inicio
           </a>
           <a
             href="#Services"
-            className="block lg:inline-block text-gray-800 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400 py-2 lg:py-0"
-            onClick={() => setIsMenuOpen(false)}
-          >
+            className="block lg:inline-block text-lg font-semibold text-gray-800 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 py-2 lg:py-0 transition-all duration-300 ease-in-out transform hover:scale-105 no-underline"          >
             Servicios
           </a>
           <a
             href="#Team"
-            className="block lg:inline-block text-gray-800 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400 py-2 lg:py-0"
-            onClick={() => setIsMenuOpen(false)}
-          >
+             className="block lg:inline-block text-lg font-semibold text-gray-800 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 py-2 lg:py-0 transition-all duration-300 ease-in-out transform hover:scale-105 no-underline">
             Team
+          </a>
+          <a
+            href="#Location"
+             className="text-amber-300">
+            Hubicacion
           </a>
 
         </div>
