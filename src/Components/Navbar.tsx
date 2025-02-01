@@ -18,11 +18,6 @@ export default function Navbar({ theme, handleChangeTheme }: NavbarProps) {
     }
   }, [theme]);
 
-  const [pageData, setPageData] = useState({});
-  useEffect(() => {
-    setPageData(JsonData);
-  }, []);
-
   return (
     <nav className={`fixed top-0 w-full shadow-md flex justify-center items-center p-4 ${theme === "light" ? "bg-white" : "dark:bg-neutral-900"}`}>
 
