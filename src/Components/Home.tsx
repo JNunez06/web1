@@ -26,7 +26,8 @@ export function Home() {
 
             {/* Sección del cubo */}
             <div className="w-full md:w-1/2 flex justify-center md:justify-end mt-8 md:mt-0">
-              <div className="w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] shadow-lg">
+              {/* shadow para sombrear bordes <div className="w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] shadow-lg"> */}
+              <div className="w-[300px] h-[300px] sm:w-[400px] sm:h-[400px]">
                 <Canvas camera={{ position: [2, 2, 3], fov: 50 }}>
                   <ambientLight intensity={0.7} />
                   <pointLight position={[10, 10, 10]} />

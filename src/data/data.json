@@ -10,12 +10,12 @@
     {
       "icon": "faWordpress",
       "name": "1",
-      "text": "Landings Page"
+      "text": "Sitios Web"
     },
     {
       "icon": "faCartArrowDown",
       "name": "2",
-      "text": "App Web"
+      "text": "Aplicaciones Web"
     },
     {
       "icon": "faCloudDownload",
@@ -30,12 +30,12 @@
     {
       "icon": "faPlane",
       "name": "5",
-      "text": "."
+      "text": "Maquetados"
     },
     {
       "icon": "faPieChart",
       "name": "6",
-      "text": "."
+      "text": "Y mucho más"
     }
     ],
     "Team": [
