@@ -7,6 +7,8 @@ import Navbar from './Components/Navbar';
 import { Home } from './Components/Home';
 import {Services} from './Components/Services';
 import { Team } from './Components/Team';
+import { Analytics } from "@vercel/analytics/react";  // Aquí importas el componente Analytics
+
 
 function App() {
   
@@ -29,8 +31,10 @@ function App() {
         <Services />
         <Team />
 
-
+         
       </div>
+      {/* Agregar Analytics aquí */}
+      <Analytics />  {/* Este componente se coloca justo al final */}
       
 
     </>
