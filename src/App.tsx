@@ -1,13 +1,15 @@
 /*import './App.css'*/
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from './Components/Navbar'; // Asegúrate de importar el componente Navbar
 import { useState } from 'react';
 
-
-
-
+/*import { Navbar } from './Components/Navbar' ;*/
+import Navbar from './Components/Navbar';
+import { Home } from './Components/Home';
+import {Services} from './Components/Services';
+import { Team } from './Components/Team';
 
 function App() {
+  
   const [theme, setTheme] = useState(() => {
     if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       return "dark";
@@ -18,12 +20,16 @@ function App() {
   const handleChangeTheme = () => {
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
   };
-  
   return (
     <>
        <Navbar theme={theme} handleChangeTheme={handleChangeTheme} />
-      <div className="h-screen flex justify-center items-center dark:bg-neutral-900">
+      <div className="h-screen flex-col justify-center items-center dark:bg-neutral-900">
         {/* Aquí puedes agregar el contenido principal de tu aplicación */}
+        <Home />
+        <Services />
+        <Team />
+
+
       </div>
       
 
