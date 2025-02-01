@@ -24,7 +24,8 @@ export default function Navbar({ theme, handleChangeTheme }: NavbarProps) {
   }, []);
 
   return (
-    <nav className="fixed top-0 w-full shadow-md p-4 dark:bg-neutral-900 bg-white z-50">
+    <nav className={`fixed top-0 w-full shadow-md flex justify-center items-center p-4 ${theme === "light" ? "bg-white" : "dark:bg-neutral-900"}`}>
+
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <span className="text-xl font-bold text-black dark:text-white">
