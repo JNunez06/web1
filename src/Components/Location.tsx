@@ -33,7 +33,7 @@ export function Location() { // Asegúrate de que esté exportado como "Location
   }
 
   return (
-    <div className="w-full max-w-4xl mx-auto my-8">
+    <div id = "Location" className="  w-full max-w-4xl mx-auto my-8">
       <h2 className="text-2xl font-bold text-center mb-4">Ubicación</h2>
       <div className="rounded-lg overflow-hidden shadow-lg">
         <GoogleMap
