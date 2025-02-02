@@ -11,6 +11,8 @@ import { Analytics } from "@vercel/analytics/react";  // Aquí importas el compo
 import { Location } from './Components/Location';
 
 import WhatsAppButton from './Components/WhatsAppButton';
+import Chatbot from './Components/Chatbot'; // Asegúrate de que la ruta sea correcta
+
 
 
 
@@ -45,7 +47,12 @@ function App() {
         <Services />
         <Team />
         <Location />
-        <WhatsAppButton phoneNumber="928161600" />
+
+        <div className="relative">
+          <WhatsAppButton phoneNumber="928161600" />
+          <Chatbot />
+        </div>
+        
 
 
 

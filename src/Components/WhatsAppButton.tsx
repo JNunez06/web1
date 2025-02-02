@@ -12,9 +12,9 @@ const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({ phoneNumber }) => {
       href={whatsappLink}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-5 right-5 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300"
+      className="fixed bottom-5 right-5 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 z-40"
     >
-      {/* Reemplazamos el ícono de Font Awesome con una imagen */}
+      {/* Imagen del ícono de WhatsApp */}
       <img
         src="/Images/whatsapp-icon.png" // Ruta de la imagen
         alt="WhatsApp"
