@@ -18,25 +18,32 @@ export default function Navbar({ theme, handleChangeTheme }: NavbarProps) {
     }
   }, [theme]);
 
-  return (
-    <nav className={`fixed top-0 w-full shadow-md flex justify-center items-center p-4 ${theme === "light" ? "bg-white" : "dark:bg-neutral-900"}`}>
+  // Función para hacer scroll hasta una sección
+  const handleScrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
+  return (
+    <nav className={`fixed top-0 w-full shadow-md flex justify-center items-center p-4 ${theme === "light" ? "bg-blue-100" : "dark:bg-neutral-900"}`}>
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
-        <span className="text-xl font-bold  dark:text-blue-700 text-blue-500 ">
+        <span className="text-xl font-bold dark:text-blue-700 text-blue-500">
           DevPro
         </span>
+        
         {/* Botón de cambio de tema */}
         <button
-            className="px-4 py-2 rounded hover:bg-slate-300 dark:bg-slate-950 dark:text-white dark:hover:bg-slate-900 mt-2 lg:mt-0"
-            onClick={handleChangeTheme}
-          >
-           {/* {theme === "light" ? "Noche" : "Día"}*/}
-            <label className="switch">
-                    {theme === "light" ? < IconMoon /> : <IconSun />}
-                <span className="slider"></span>
-            </label>
-          </button>
+          className="px-4 py-2 rounded hover:bg-slate-300 dark:bg-slate-950 dark:text-white dark:hover:bg-slate-900 mt-2 lg:mt-0"
+          onClick={handleChangeTheme}
+        >
+          <label className="switch">
+            {theme === "light" ? <IconMoon /> : <IconSun />}
+            <span className="slider"></span>
+          </label>
+        </button>
 
         {/* Botón de menú hamburguesa (solo en móvil) */}
         <button
@@ -59,35 +66,42 @@ export default function Navbar({ theme, handleChangeTheme }: NavbarProps) {
         </button>
 
         {/* Menú de navegación (oculto en móvil, visible en pantallas grandes) */}
-        <div
-          className={`${
-            isMenuOpen ? "block" : "hidden"
-          } lg:flex lg:items-center lg:space-x-4`}
-        >
-          <a
-            href="#Home"
-            className="block lg:inline-block text-lg font-semibold text-gray-800 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 py-2 lg:py-0 transition-all duration-300 ease-in-out transform hover:scale-105 no-underline"          >
-            Inicio
-          </a>
-          <a
-            href="#Services"
-            className="block lg:inline-block text-lg font-semibold text-gray-800 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 py-2 lg:py-0 transition-all duration-300 ease-in-out transform hover:scale-105 no-underline"          >
-            Servicios
-          </a>
-          <a
-            href="#Team"
-             className="block lg:inline-block text-lg font-semibold text-gray-800 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 py-2 lg:py-0 transition-all duration-300 ease-in-out transform hover:scale-105 no-underline">
-            Team
-          </a>
-          <a
-            href="#Location"
-             className="text-amber-300">
-            Hubicacion
-          </a>
-
+        <div className={`${isMenuOpen ? "block" : "hidden "} w-full md:block md:w-auto `}>
+        <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border  rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  md:bg-blue-100 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li>
+              <button
+                onClick={() => handleScrollToSection("Home")}
+                className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              >
+                Inicio
+              </button>
+            </li>
+            <li>
+              <button
+                onClick={() => handleScrollToSection("Services")}
+                className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              >
+                Servicios
+              </button>
+            </li>
+            <li>
+              <button
+                onClick={() => handleScrollToSection("Team")}
+                className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              >
+                Equipo DP
+              </button>
+            </li>
+            <li>
+              <button
+                onClick={() => handleScrollToSection("Location")}
+                className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+              >
+                Ubicación
+              </button>
+            </li>
+          </ul>
         </div>
-            
-          
       </div>
     </nav>
   );
