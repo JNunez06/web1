@@ -10,7 +10,7 @@ import { Team } from './Components/Team';
 import { Analytics } from "@vercel/analytics/react";  // Aquí importas el componente Analytics
 import { Location } from './Components/Location';
 
-import { FuturisticBackground } from './Components/FuturisticBackground';
+import WhatsAppButton from './Components/WhatsAppButton';
 
 
 
@@ -45,6 +45,7 @@ function App() {
         <Services />
         <Team />
         <Location />
+        <WhatsAppButton phoneNumber="928161600" />
 
 
 
