@@ -1,5 +1,6 @@
 /*import './App.css'*/
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import { useState } from 'react';
 
 /*import { Navbar } from './Components/Navbar' ;*/
@@ -7,12 +8,14 @@ import Navbar from './Components/Navbar';
 import { Home } from './Components/Home';
 import {Services} from './Components/Services';
 import { Team } from './Components/Team';
+
+import AutoPlay from './Components/AutoPlay';
+
 import { Analytics } from "@vercel/analytics/react";  // Aquí importas el componente Analytics
 import { Location } from './Components/Location';
 
 import WhatsAppButton from './Components/WhatsAppButton';
 import Chatbot from './Components/Chatbot'; // Asegúrate de que la ruta sea correcta
-
 
 
 
@@ -44,9 +47,13 @@ function App() {
         {/* Aquí puedes agregar el contenido principal de tu aplicación */}
       
         <Home />
+        <AutoPlay/>
         <Services />
         <Team />
         <Location />
+        
+        
+        
 
         <div className="relative">
           <WhatsAppButton phoneNumber="928161600" />
