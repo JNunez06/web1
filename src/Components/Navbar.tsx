@@ -31,7 +31,7 @@ export default function Navbar({ theme, handleChangeTheme }: NavbarProps) {
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <span className="text-xl font-bold dark:text-blue-700 text-blue-500">
-          DevPro
+          DevStudio
         </span>
         
         {/* Botón de cambio de tema */}
