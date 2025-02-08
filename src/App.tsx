@@ -9,8 +9,6 @@ import { Home } from './Components/Home';
 import {Services} from './Components/Services';
 import { Team } from './Components/Team';
 
-import AutoPlay from './Components/AutoPlay';
-
 import { Analytics } from "@vercel/analytics/react";  // Aquí importas el componente Analytics
 import { Location } from './Components/Location';
 
@@ -47,10 +45,10 @@ function App() {
         {/* Aquí puedes agregar el contenido principal de tu aplicación */}
       
         <Home />
-        <AutoPlay/>
         <Services />
         <Team />
         <Location />
+        
         
         
         

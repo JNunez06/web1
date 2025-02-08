@@ -10,7 +10,7 @@ export function Cube() {
   // Cambio de color para el cubo
   useEffect(() => {
     const interval = setInterval(() => {
-      setColor(color === "blue" ? "orange" : "blue");
+      setColor(color ===  "blue" ? "orange" : "blue");
     }, 1000); // Cambia de color cada segundo
 
     return () => clearInterval(interval); // Limpiar el intervalo al desmontar el componente

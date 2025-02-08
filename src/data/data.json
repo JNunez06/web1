@@ -9,53 +9,53 @@
     {
       "icon": "faWordpress",
       "name": "1",
-      "text": "Sitios Web"
+      "text": "Desarrollo Web"
     },
     {
-      "icon": "faCartArrowDown",
+      "icon": "img/team/04.jpg",
       "name": "2",
-      "text": "Aplicaciones Web"
+      "text": "Diseño UI/UX"
     },
     {
       "icon": "faCloudDownload",
       "name": "3",
-      "text": "App Desktop"
+      "text": "Desarrollo Mobile"
     },
     {
       "icon": "faLanguage",
       "name": "4",
-      "text": "Diseño de prototipos de aplicaciones"
+      "text": "Base de Datos"
     },
     {
       "icon": "faPlane",
       "name": "5",
-      "text": "Maquetados"
+      "text": "Cloud Solutions"
     },
     {
       "icon": "faPieChart",
       "name": "6",
-      "text": "Y mucho más"
+      "text": "Optimización"
     }
     ],
     "Team": [
     {
       "img": "img/team/01.jpg",
-      "name": "John Doe",
+      "name": "JECNER",
       "job": "Director"
     },
     {
       "img": "img/team/02.jpg",
-      "name": "Mike Doe",
+      "name": "N",
       "job": "Senior Designer"
     },
     {
       "img": "img/team/03.jpg",
-      "name": "Jane Doe",
+      "name": "S",
       "job": "Senior Designer"
     },
     {
       "img": "img/team/04.jpg",
-      "name": "Karen Doe",
+      "name": "J",
       "job": "Project Manager"
     }
   ]

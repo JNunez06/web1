@@ -27,7 +27,7 @@ export default function Navbar({ theme, handleChangeTheme }: NavbarProps) {
   };
 
   return (
-    <nav className={` z-50 fixed top-0 w-full shadow-md flex justify-center items-center p-4 ${theme === "light" ? "bg-blue-100" : "dark:bg-neutral-900"}`}>
+    <nav className={` z-50 fixed top-0 w-full shadow-md flex justify-center items-center p-0.1 ${theme === "light" ? "bg-gradient-to-r from-white to-blue-900" : " dark:from-gray-900 dark:to-black"}`}>
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <span className="text-xl font-bold dark:text-blue-700 text-blue-500">
@@ -67,7 +67,7 @@ export default function Navbar({ theme, handleChangeTheme }: NavbarProps) {
 
         {/* Menú de navegación (oculto en móvil, visible en pantallas grandes) */}
         <div className={`${isMenuOpen ? "block" : "hidden "} w-full md:block md:w-auto `}>
-        <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border  rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  md:bg-blue-100 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <ul className="font-medium flex flex-col p-4 md:p-0 mt-4  rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0">
             <li>
               <button
                 onClick={() => handleScrollToSection("Home")}

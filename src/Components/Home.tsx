@@ -3,6 +3,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { Cube } from "../Figure/Cube";
 
+
 export function Home() {
   const scrollToServices = () => {
     const servicesElement = document.getElementById('Services');
@@ -12,7 +13,7 @@ export function Home() {
   };
 
   return (
-    <header id="Home" className="h-screen bg-blue-100 dark:bg-blue-900 transition-colors duration-300 pt-20">
+    <header id="Home" className="w-full h-screen bg-gradient-to-r from-white to-blue-900 dark:from-gray-900 dark:to-black transition-colors duration-300 pt-20">
       
       {/* Contenedor principal con diseño responsive */}
       <div className="intro h-full flex items-center justify-center">
@@ -22,7 +23,7 @@ export function Home() {
             {/* Sección de texto */}
             <div className="text-center md:text-left md:w-1/2">
               {/* Título */}
-              <h1 className="text-10xl sm:text-9xl font-bold text-black dark:text-white mb-4">
+              <h1 className="text-[120px] sm:text-[100px] font-bold dark:text-gray-300 mb-4">
                 {JsonData ? JsonData.Header.title : 'Loading'}
               </h1>
 
@@ -43,6 +44,10 @@ export function Home() {
                 </Canvas>
               </div>
             </div>
+
+            
+
+
           </div>
 
           {/* Botón debajo del texto y del cubo en pantallas pequeñas */}
