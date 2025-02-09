@@ -1,11 +1,11 @@
 import { default as JsonData } from "../data/data.json";
 
+
 export function Team() {
+  
   return (
-    <div
-      id="Team"
-      className="bg-red-100 dark:bg-red-900 transition-colors duration-300 py-16"
-    >
+    <div id="Team" className="bg-red-100 dark:bg-red-900 transition-colors duration-300 py-16">
+      
       <div className="max-w-6xl mx-auto px-4">
         {/* Título y descripción */}
         <div className="text-center mb-12 animate-fade-in">

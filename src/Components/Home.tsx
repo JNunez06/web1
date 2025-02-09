@@ -2,6 +2,8 @@ import JsonData from '../data/data.json';
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { Cube } from "../Figure/Cube";
+import { motion } from "framer-motion";
+
 
 
 export function Home() {
@@ -11,15 +13,35 @@ export function Home() {
       servicesElement.scrollIntoView({ behavior: 'smooth' });
     }
   };
+  const texts = [
+    
+    "🚀 Transformación Digital",
+    "🔍 Inteligencia Artificial",
+    "💻 Cloud Computing",
+    "🔐 Ciberseguridad",
+    "📡 Internet de las Cosas (IoT)",
+  ];
 
   return (
     <header id="Home" className="w-full h-screen bg-gradient-to-r from-white to-blue-900 dark:from-gray-900 dark:to-black transition-colors duration-300 pt-20">
       
       {/* Contenedor principal con diseño responsive */}
       <div className="intro h-full flex items-center justify-center">
-        <div className="overlay container mx-auto px-4">
+        
+        <div className="overlay container dark:text-gray-300 mx-auto px-4">
           {/* Contenedor flex en columna para pantallas pequeñas y en fila para pantallas grandes */}
-          <div className="flex flex-col md:flex-row items-center justify-between">
+          <motion.div
+        className="flex gap-8 text-xl font-semibold whitespace-nowrap"
+        animate={{ x: ["0%", "-100%"] }}
+        transition={{ repeat: Infinity, duration: 10, ease: "linear" }}
+      >
+        {texts.concat(texts).map((text, index) => (
+          <span key={index} className="px-6">
+            {text}
+          </span>
+        ))}
+      </motion.div>
+          <div className="flex flex-col md:flex-row items-center justify-between">  
             {/* Sección de texto */}
             <div className="text-center dark:text-gray-300 md:text-left md:w-1/2">
               {/* Título */}
