@@ -30,17 +30,20 @@ export function Home() {
         
         <div className="overlay container dark:text-gray-300 mx-auto px-4">
           {/* Contenedor flex en columna para pantallas pequeñas y en fila para pantallas grandes */}
-          <motion.div
-        className="flex gap-8 text-xl font-semibold whitespace-nowrap"
-        animate={{ x: ["0%", "-100%"] }}
-        transition={{ repeat: Infinity, duration: 10, ease: "linear" }}
-      >
-        {texts.concat(texts).map((text, index) => (
-          <span key={index} className="px-6">
-            {text}
-          </span>
-        ))}
-      </motion.div>
+          <motion.div className="z-50 overflow-hidden py-4">
+            <div className="w-[200%] flex gap-8 text-xl font-semibold text-gray-700 whitespace-nowrap">
+              <motion.div
+                className="flex gap-8"
+                animate={{ x: ["0%", "-100%"] }}
+                transition={{ repeat: Infinity, duration: 10, ease: "linear" }}
+              >
+                {texts.concat(texts).map((text, index) => (
+                  <span key={index} className="px-6">{text}</span>
+                ))}
+              </motion.div>
+            </div>
+          </motion.div>
+
           <div className="flex flex-col md:flex-row items-center justify-between">  
             {/* Sección de texto */}
             <div className="text-center dark:text-gray-300 md:text-left md:w-1/2">
