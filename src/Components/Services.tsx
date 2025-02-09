@@ -13,7 +13,7 @@ export function Services() {
         {/* Título y descripción */}
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">Nuestros Servicios</h2>
-          <p className="text-lg sm:text-xl text-gray-700 dark:text-gray-300">
+          <p className=" text-lg sm:text-xl text-gray-700 dark:text-gray-300">
             DevPro ofrece servicios en desarrollo y diseño de aplicaciones web y móviles, marketing digital, diseño gráfico y más.
           </p>
         </div>
@@ -26,7 +26,7 @@ export function Services() {
             ? JsonData.Services.map((d, i) => (
                 <div
                   key={`${d.name}-${i}`}
-                  className="bg-white dark:bg-neutral-800 p-6 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 animate-fade-in"
+                  className="bg-white place-items-center dark:bg-neutral-800 p-6 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 animate-fade-in"
                 >
                   <div>
                     <FcIdea  className="text-6xl text-blue-500 dark:text-yellow-500" />

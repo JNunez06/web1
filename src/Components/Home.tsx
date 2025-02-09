@@ -21,14 +21,14 @@ export function Home() {
           {/* Contenedor flex en columna para pantallas pequeñas y en fila para pantallas grandes */}
           <div className="flex flex-col md:flex-row items-center justify-between">
             {/* Sección de texto */}
-            <div className="text-center md:text-left md:w-1/2">
+            <div className="text-center dark:text-gray-300 md:text-left md:w-1/2">
               {/* Título */}
-              <h1 className="text-[120px] sm:text-[100px] font-bold dark:text-gray-300 mb-4">
+              <h1 className=" text-[120px] sm:text-[100px] font-extrabold  mb-4 ">
                 {JsonData ? JsonData.Header.title : 'Loading'}
               </h1>
 
               {/* Descripción */}
-              <p className="text-lg sm:text-xl text-gray-700 dark:text-gray-300 mb-8">
+              <p className="text-lg sm:text-xl text-gray-700 dark:text-gray-300  mb-8">
                 {JsonData ? JsonData.Header.paragraph : 'Loading'}
               </p>
             </div>
@@ -89,8 +89,8 @@ export function Home() {
               <span
                 className="absolute inset-0 rounded-2xl bg-gradient-to-r from-emerald-500 via-cyan-500 to-sky-600 p-[2px] opacity-0 transition-opacity duration-500 group-hover:opacity-100"
               ></span>
-              <span className="relative z-10 block px-6 py-3 rounded-2xl bg-neutral-950">
-                <div className="relative z-10 flex items-center space-x-3">
+              <span className="relative z-10  block px-6 py-3 rounded-2xl bg-neutral-950">
+                <div className="relative z-10  flex items-center space-x-3">
                   <span className="transition-all duration-500 group-hover:translate-x-1.5 group-hover:text-emerald-300">
                     Más información
                   </span>
@@ -99,7 +99,7 @@ export function Home() {
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     fill="currentColor"
-                    className="w-7 h-7 transition-all duration-500 group-hover:translate-x-1.5 group-hover:text-emerald-300"
+                    className="animate-bounce w-7 h-7 transition-all duration-500 group-hover:translate-x-1.5 group-hover:text-emerald-300"
                   >
                     <path
                       d="M12 16l4-4h-3V4h-2v8H8l4 4z"
